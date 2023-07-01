@@ -1,0 +1,225 @@
+/* -------------- */
+/* header */
+/* -------------- */
+.content_container .leaderboard_header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 20px;
+}
+.content_container .leaderboard_header .page_title {
+  font-size: 30px;
+  font-family: var(--title_font);
+  font-weight: bold;
+
+  margin-bottom: 40px;
+}
+/* -------------- */
+/* leaderboard */
+/* -------------- */
+.content_container .leaderboard {
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+
+  position: relative;
+
+  border-radius: 10px;
+}
+.content_container .leaderboard .user_position {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--leaderboard-background);
+
+  border-radius: 20px 20px 0 0;
+
+  padding: 20px;
+  align-items: center;
+}
+.content_container
+  .leaderboard
+  .user_position
+  .text_container
+  .user_rewards_title {
+  font-family: var(--title_font);
+
+  font-size: 14px;
+}
+
+.content_container
+  .leaderboard
+  .user_position
+  .text_container
+  .user_rewards_info {
+  font-family: var(--description_font);
+  font-weight: bold;
+
+  font-size: 18px;
+}
+
+/* -------------- */
+/* user profile */
+/* -------------- */
+.content_container .leaderboard .user_position .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* rewards side  */
+.content_container .leaderboard .user_position .text_container {
+  width: 125px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content_container
+  .leaderboard
+  .user_position
+  .text_container
+  .rewards_amount_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 5px;
+}
+
+.content_container
+  .leaderboard
+  .user_position
+  .text_container
+  .rewards_amount_container
+  span:not(:last-child) {
+  margin-bottom: 5px;
+}
+/* profile img  */
+.content_container .leaderboard .user_position .profile_img {
+  width: 120px;
+  height: 120px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.content_container .leaderboard .user_position .profile_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* rank side  */
+.content_container .leaderboard .user_position .text_container .rank {
+  margin: auto 0;
+}
+
+/* username under profie img */
+.content_container .leaderboard .user_position .user_user-name {
+  font-family: var(--description_font);
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+
+/* -------------- */
+/* person container */
+/* -------------- */
+.content_container .other_users_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--leaderboard-container-background);
+
+  margin-bottom: 50px;
+
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
+/* person */
+.content_container .leaderboard .person {
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content_container .leaderboard .person:not(:last-child) {
+  border-bottom: 1px solid var(--leaderborard-border-bottom);
+}
+/* position number */
+.content_container .leaderboard .person .num_position {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: var(--description_font);
+
+  margin-right: 20px;
+}
+/* info container */
+.content_container .leaderboard .person .info_container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.content_container .leaderboard .person .profile_img {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.content_container .leaderboard .person .profile_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.content_container .leaderboard .person .info_container .text {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--description_font);
+}
+.content_container .leaderboard .person .info_container .text span:first-child {
+  font-size: 16px;
+}
+.content_container .leaderboard .person .info_container .text span:last-child {
+  font-size: 14px;
+}
+/* total amount recived */
+.content_container .leaderboard .person .amount_earned {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  font-family: var(--description_font);
+}
+
+@media screen and (max-width: 460px) {
+  .content_container .leaderboard .user_position .text_container {
+    width: 90px;
+  }
+  .content_container
+    .leaderboard
+    .user_position
+    .text_container
+    .user_rewards_title {
+    font-size: 12px;
+  }
+  .content_container .leaderboard .user_position .profile_img {
+    width: 80px;
+    height: 80px;
+  }
+  .sats {
+    display: none;
+  }
+}

@@ -13,11 +13,11 @@
 
 ### The project
 
-What if there was a way to get paid to scroll? Bitrewards uses the JavaScrpt framwork React, along with the bitcoin lightning network to allow users to monitize thier time. Advertisers can launch campains giving users money back on purchases, or users can scroll and see ads to get paid.
+What if there was a way to get paid to scroll? Bitrewards uses the JavaScrpt framework React, along with the Bitcoin lightning network to allow users to monetize their time. Advertisers can launch campaigns giving users money back on purchases, or users can scroll and see ads to get paid.
 
 ### Screenshot
 
-![](./assets/images/Screenshot.png)
+![](./public/homeView.png)
 
 
 ## My process
